@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="flex justify-between bg-gray-400 p-7 fixed top-0 w-full">
+        <a href="/"><h1 class="font-bold">Adeline IGIRANEZA</h1></a>
+        <div class="font-semibold flex gap-10 ">
+            <a class="cursor-pointer" href="">ABOUT</a>
+            <a class="hover:text-white  cursor-pointer" href="">SKILLS</a>
+            <a class="hover:text-white  cursor-pointer" href="">CONTACT</a>
+        </div>
+    </header>
+
+    <main>     
+    <div>
+        <div class="grid grid-cols-2 pt-20">
+
+            <div class="bg-cyan-900">
+                <figure>
+                    <img src="/images/Adeline.png" alt="Centered" class="mx-auto">
+                    <figcaption class="text-center font-bold text-xl"><em>🖥️ Let's  create  something amazing together!</em></figcaption>
+                </figure>
+                <p class="p-5 text-center text-black text-lg">Hi, I'm Adeline IGIRANEZA.<br>I'm a passionate Front-End Developer and UI/UX designer, focused on creating beautiful, 
+                    responsive, and user-friendly web experiences. I enjoy bringing ideas to life through clean, functional design, and 
+                    I'm always excited to learn, grow, and collaborate on innovative tech projects. With a background in 
+                    Information Technology 
+                    and a curious mind, I'm driven to build solutions that make a real impact.<br>
+                        <button class="bg-white hover:bg-blue-400 text-black rounded-full w-20 h-10 m-2"><a href="https://drive.google.com/file/d/1UfXKZwSXmCRYS-stzgw7xHP2Jsn3y4cG/view?usp=drive_link" target="_blank">Resume</a></button><br>
+                        <button class="bg-white hover:bg-blue-700 text-black rounded-full w-20 h-10 m-2"><a href="https://github.com/Igiraneza1?tab=repositories" target="_blank">Github</a></button>
+
+                  </p> 
+
+            </div>
+
+          <div class=" bg-teal-900 grid grid-row-2 text-white">
+                <div class="flex justify-between">
+                    <h2 class="p-5 font-bold text-gray-400">skills__________________________</h2>
+                    <button onclick="toggleContent()" 
+                    class="text-white rounded bg-teal-500 w-20 h-10 m-3">Read more</button>
+                    <div id="hiddenContent" class="mt-4 p-4 bg-white rounded hidden">
+                        <form>
+
+                            <label for="volume" class="block text-sm font-medium text-orange-700">HTML:</label>
+                            <input type="range" id="volume" name="volume" min="0" max="100" value="90"
+                            class="w-full h-10 cursor-pointer accent-orange-500"/>
+                            
+                            <label for="volume" class="block text-sm font-medium text-blue-700">CSS:</label>
+                            <input type="range" id="volume" name="volume" min="0" max="100" value="80"
+                            class="w-full h-10 cursor-pointer accent-blue-700"/>
+                   
+                            <label for="volume" class="block text-sm font-medium text-yellow-500">JAVASRIPT:</label>
+                            <input type="range" id="volume" name="volume" min="0" max="100" value="50"
+                            class="w-full h-10 cursor-pointer accent-yellow-500"/>
+                   
+                            <label for="volume" class="block text-sm font-medium text-blue-400">TAILIWIND:</label>
+                            <input type="range" id="volume" name="volume" min="0" max="100" value="80"
+                            class="w-full h-10 cursor-pointer accent-blue-400"/>
+                   
+                            <label for="volume" class="block text-sm font-medium text-blue-400">REACT.JS:</label>
+                            <input type="range" id="volume" name="volume" min="0" max="100" value="50"
+                            class="w-full h-10 cursor-pointer accent-blue-300"/>
+                   
+                           </form>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-5 gap-10">
+                    <img class="" src="images/HTML.png" alt="html">
+                    <img class="" src="images/CSS.png" alt="css">
+                    <img class="" src="images/java-script.png" alt="js">
+                    <img src="images/REACT.png" alt="react">
+                    <img src="images/TAILWIND.png" alt="tailwing">
+                </div>
+
+            <div class="p-5">
+                <h2 class="font-bold text-gray-400 pb-5">projects____________________</h2>
+                <div class="grid grid-cols-2 flex gap-3">
+                    <p>
+                    I worked on TechBridge project, where i built the structure and design of the website using HTML,CSS, and JavaScript.
+                    The project focused on unlocking technology for all and creating innovation from internet.<br>
+                    Through the project i improved my front-end development skills.<br> 
+                    <button class="bg-green-700 rounded-full m-3 w-40 h-10"><a href="https://igiraneza1.github.io/techbridge/" target="_blank">View Project</a></button>
+                    </p>
+                    <p>
+                        This project is web-based platform using react.js designed to inform people about upcomming blood donation events, including location,date and time.<br>
+                        I gained experience in creating web application.<br>
+                        <button class="bg-red-900 rounded-full m-3 w-40 h-10"><a href="https://kproject-psi.vercel.app/" target="_blank">View Project</a></button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="p-5">
+                <h3 class="font-bold text-gray-400 pb-5">Mission and vision_______________</h3>
+                <div class="flex gap-5">
+                    <p><strong class="text-cyan-500">Mission: </strong>Empower communities by building user-friendly tech solutions and sharing digital skills tha mame a real difference.</p>
+                    <p><strong class="text-cyan-500">Vision: </strong>Inspire a future where everyone can create, connect, and grow through the power of technology.</p>
+
+                </div>
+
+                <button class="bg-black w-24 h-10 m-5 transform hover:scale-125 transition duration-500 "><a href="http://127.0.0.1:5500/MissionAndVision.html" target="_blank">Read more</a></button>
+            </div>
+
+          </div>
+        </div>
+    </div>  
+    
+    
+    <div>
+
+
+    </main>
+    <footer class="bg-black grid grid-cols-2 p-5">
+        <div class="flex flex-col gap-5 ml-10">
+            <a href="#" class="fa fa-twitter text-white transform hover:scale-105 transition duration-500 size-10">gira_neza</a>
+            <a href="#" class="fa fa-linkedin text-white transform hover:scale-105 transition duration-500 size-10"></a>
+            <a href="#" class="fa fa-instagram text-white transform hover:scale-105 transition duration-500 size-10"></a>
+            <a href="#" class="fa fa-whatsapp text-white transform hover:scale-105 transition duration-500 size-10"></a>
+        </div>
+        
+        <div>
+            <h3 class="text-gray-400">Leave comment</h3>
+            <form>
+                <input type="text" class="bg-black w-30 h-10" placeholder="Enter your names"><br>
+                <input type="email" class="bg-black w-30 h-10 mt-2" placeholder="example@gmail.com"><br>
+                <textarea name="" id=""  cols="30" rows="3" class="bg-black text-gray-400 border mt-5" placeholder="Type here!"></textarea><br>
+                <button class="bg-white w-20 h-10">Send</button>
+            </form>
+        </div>
+
+        <div class="text-gray-100 bottom-0 ">
+            <address><time datetime="2025-04-11">April 11, 2025</time> &copy; Alright reseved by <a class="hover:text-white" href="igiranezaadeline@gmail.com">Adeline Igiraneza</a></address>
+        </div>
+
+    </footer>
+
+
+    <script>
+        function toggleContent() {
+          const content = document.getElementById("hiddenContent");
+          content.classList.toggle("hidden");
+        }
+      </script>
+
+</body>
+</html>
