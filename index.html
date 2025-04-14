@@ -18,7 +18,7 @@
       <a class="hover:text-white cursor-pointer" href="#">SKILLS</a>
       <a class="hover:text-white cursor-pointer" href="#">CONTACT</a>
       <button onclick="toggleDarkMode()" class="text-2xl text-yellow-400 dark:text-white hover:text-yellow-500 dark:hover:text-gray-300 transition"aria-label="Toggle Dark Mode">
-        <i id="themeIcon" class="fas fa-moon"><img src="images/dark.png" width="30" height="30" class="dark:bg-white" alt=""></i></button>
+        <i id="themeIcon"><img src="images/dark.png" width="30" height="30" class="dark:bg-white" alt=""></i></button>
     </div>
   </header>
 
@@ -134,12 +134,12 @@
   </main>
 
 
-  <footer class="bg-black text-white mt-10 p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <footer class="bg-black text-white mt-10 p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
     <div class="flex flex-col gap-3">
-      <a href="#" class="fa fa-twitter hover:text-cyan-400"> gira-neza</a>
-      <a href="#" class="fa fa-linkedin hover:text-cyan-400"> adeline-igiraneza</a>
-      <a href="#" class="fa fa-instagram hover:text-cyan-400"> gira_neza</a>
-      <a href="#" class="fa fa-whatsapp hover:text-cyan-400"> 0782766241</a>
+      <a href="https://x.com/AdlnIg?t=zuqxsFkj6Xjonfc0wmRMIg&s=09" class="fa fa-twitter hover:text-cyan-400"> gira-neza</a>
+      <a href="https://www.linkedin.com/in/adeline-igiraneza?" class="fa fa-linkedin hover:text-cyan-400"> adeline-igiraneza</a>
+      <a href="https://www.instagram.com/gira_neza?igsh=YjM4NDI5bjJtOGs2" class="fa fa-instagram hover:text-cyan-400"> gira_neza</a>
+      <a href="https://web.whatsapp.com/" class="fa fa-whatsapp hover:text-cyan-400"> 0782766241</a>
     </div>
 
     <div>
@@ -147,17 +147,15 @@
       <form>
         <input type="text" class="bg-black border w-full md:w-60 h-10 p-2 mb-2" placeholder="Enter your names" />
         <input type="email" class="bg-black border w-full md:w-60 h-10 p-2 mb-2" placeholder="example@gmail.com" />
-        <textarea cols="30" rows="3" class="bg-black text-gray-400 border w-full md:w-60 p-2" placeholder="Type here!"></textarea>
-        <button class="bg-white text-black mt-3 w-24 h-10">Send</button>
+        <textarea cols="30" rows="3" class="bg-black text-gray-400 border w-full md:w-60 p-2" placeholder="Type here!"></textarea><br>
+        <button class="bg-white text-black mt-3 w-24 h-10"><a href="mailto:igiranezaadeline@gmail.com"></a>Send</button>
       </form>
     </div>
 
-    <div class="text-gray-300 text-sm">
-      <address>
+    <address class="text-gray-300 text-sm  text-white text-center pr-10 fixed bottom-0 flex justify-end w-full">
         <time datetime="2025-04-11">April 11, 2025</time> &copy; All rights reserved by 
         <a href="mailto:igiranezaadeline@gmail.com" class="hover:text-white">Adeline Igiraneza</a>
       </address>
-    </div>
   </footer>
 
   
@@ -171,8 +169,6 @@
             const html = document.documentElement;
             const icon = document.getElementById('themeIcon');
             html.classList.toggle('dark');
-            icon.classList.toggle('fa-moon');
-            icon.classList.toggle('fa-sun');
     }
   </script>
 </body>
