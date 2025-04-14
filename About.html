@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {darkMode: 'class',}</script>
 </head>
-<body>
-    <header class="flex justify-between bg-gray-400 p-7 fixed top-0 w-full">
-        <a href="/"><h1 class="font-bold">Adeline IGIRANEZA</h1></a>
-        <div class="font-semibold flex gap-10 ">
-            <a class="cursor-pointer" href="">ABOUT</a>
-            <a class="hover:text-white  cursor-pointer" href="">SKILLS</a>
-            <a class="hover:text-white  cursor-pointer" href="">CONTACT</a>
+<body class="dark:bg-black dark:text-white">
+    <header class="flex flex-col sm:flex-row justify-between items-center bg-gray-400 p-4 sm:p-7 fixed top-0 w-full z-50 dark:bg-gray-800 dark:text-white">
+        <a href="/"><h1 class="font-bold text-lg sm:text-xl">Adeline IGIRANEZA</h1></a>
+        <div class="font-semibold flex flex-col sm:flex-row gap-3 sm:gap-10 mt-3 sm:mt-0">
+          <a class="cursor-pointer hover:text-white" href="http://127.0.0.1:5500/About.html" target="_blank">ABOUT</a>
+          <a class="hover:text-white cursor-pointer" href="#">SKILLS</a>
+          <a class="hover:text-white cursor-pointer" href="#">CONTACT</a>
+          <button onclick="toggleDarkMode()" class="text-2xl text-yellow-400 dark:text-white hover:text-yellow-500 dark:hover:text-gray-300 transition"aria-label="Toggle Dark Mode">
+            <i id="themeIcon"><img src="images/dark.png" width="30" height="30" class="dark:bg-white" alt=""></i></button>
         </div>
-    </header>
+      </header>
 
     <main>
         <div class="p-20">
-        <h1 class="text-green-900 text-center text-3xl font-bold p-10">More about me</h1>
+        <h1 class="text-green-900 text-center text-3xl font-bold p-10 dark:text-green-400">More about me</h1>
         <div class=" grid grid-cols-4 gap-5">
                 <figure><img src="/images/ui.jpg" alt=""> 
                     <figcaption>Passionate about UI/UX design and front-end development</figcaption>
@@ -32,7 +36,7 @@
                     <figcaption>Lifelong learner, currently mastering responsive web design</figcaption>
                 </figure>
 
-                <figure><img src="/images/ui.jpg" alt=""> 
+                <figure><img src="/images/images.jpg" alt=""> 
                     <figcaption>Always exploring new tech like React, Node.js, and Flutter</figcaption>
                 </figure>
 
@@ -47,28 +51,36 @@
         </div>
        </main>
 
-    <footer class="bg-black grid grid-cols-2 p-5">
-        <div class="flex flex-col gap-5 ml-10">
-            <a href="#" class="fa fa-twitter text-white transform hover:scale-105 transition duration-500 size-10">gira_neza</a>
-            <a href="#" class="fa fa-linkedin text-white transform hover:scale-105 transition duration-500 size-10"></a>
-            <a href="#" class="fa fa-instagram text-white transform hover:scale-105 transition duration-500 size-10"></a>
-            <a href="#" class="fa fa-whatsapp text-white transform hover:scale-105 transition duration-500 size-10"></a>
+       <footer class="bg-black text-white p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="flex flex-col gap-3">
+          <a href="https://x.com/AdlnIg?t=zuqxsFkj6Xjonfc0wmRMIg&s=09" class="fa fa-twitter hover:text-cyan-400"> gira-neza</a>
+          <a href="https://www.linkedin.com/in/adeline-igiraneza?" class="fa fa-linkedin hover:text-cyan-400"> adeline-igiraneza</a>
+          <a href="https://www.instagram.com/gira_neza?igsh=YjM4NDI5bjJtOGs2" class="fa fa-instagram hover:text-cyan-400"> gira_neza</a>
+          <a href="https://web.whatsapp.com/" class="fa fa-whatsapp hover:text-cyan-400"> 0782766241</a>
         </div>
-        
+    
         <div>
-            <h3 class="text-gray-400">Leave comment</h3>
-            <form>
-                <input type="text" class="bg-black w-30 h-10" placeholder="Enter your names"><br>
-                <input type="email" class="bg-black w-30 h-10 mt-2" placeholder="example@gmail.com"><br>
-                <textarea name="" id=""  cols="30" rows="3" class="bg-black text-gray-400 border mt-5" placeholder="Type here!"></textarea><br>
-                <button class="bg-white w-20 h-10">Send</button>
-            </form>
+          <h3 class="text-gray-400 mb-2">Leave comment</h3>
+          <form>
+            <input type="text" class="bg-black border w-full md:w-60 h-10 p-2 mb-2" placeholder="Enter your names" />
+            <input type="email" class="bg-black border w-full md:w-60 h-10 p-2 mb-2" placeholder="example@gmail.com" />
+            <textarea cols="30" rows="3" class="bg-black text-gray-400 border w-full md:w-60 p-2" placeholder="Type here!"></textarea><br>
+            <button class="bg-white text-black mt-3 w-24 h-10"><a href="mailto:igiranezaadeline@gmail.com"></a>Send</button>
+          </form>
         </div>
+    
+        <address class="text-gray-300 text-sm  text-white text-center pr-10 pb-4 fixed bottom-0 flex justify-end w-full">
+            <time datetime="2025-04-11">April 11, 2025</time> &copy; All rights reserved by 
+            <a href="mailto:igiranezaadeline@gmail.com" class="hover:text-white">Adeline Igiraneza</a>
+          </address>
+      </footer>
 
-        <div class="text-gray-100 bottom-0 ">
-            <address><time datetime="2025-04-11">April 11, 2025</time> &copy; Alright reseved by <a class="hover:text-white" href="igiranezaadeline@gmail.com">Adeline Igiraneza</a></address>
-        </div>
-
-    </footer>
+      <script>
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            const icon = document.getElementById('themeIcon');
+            html.classList.toggle('dark');
+        }
+      </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = {darkMode: 'class',}</script>
 </head>
-<body class="bg-gray-100 text-black dark:bg-gray-900">
+<body class="bg-gray-100 text-black dark:text-white dark:bg-gray-950">
 
  
   <header class="flex flex-col sm:flex-row justify-between items-center bg-gray-400 p-4 sm:p-7 fixed top-0 w-full z-50 dark:bg-gray-800 dark:text-white">
@@ -24,40 +24,44 @@
 
 
   <main class="pt-32 px-4">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="grid gap-8">
 
       
-      <div class="bg-cyan-900 rounded-lg p-4">
+      <div class="border-2 border-blue-400 shadow-xl p-4 rounded-lg grid grid-cols-2">
         <figure>
           <img src="/images/Adeline.png" alt="" class="mx-auto w-50 rounded-full h-80" />
           <figcaption class="text-center font-bold text-xl mt-4">
             <em>🖥️ Let's create something amazing together!</em>
           </figcaption>
         </figure>
-        <p class="p-5 text-center text-lg">
-          Hi, I'm Adeline IGIRANEZA.<br />
-          I'm a passionate Front-End Developer and UI/UX designer, focused on creating beautiful,
-          responsive, and user-friendly web experiences. I enjoy bringing ideas to life through clean,
-          functional design, and I'm always excited to learn, grow, and collaborate on innovative tech projects.
-          With a background in Information Technology and a curious mind, I'm driven to build solutions that make a real impact.
-          <br />
-          <div class="flex justify-center flex-wrap mt-4 gap-3">
-            <button class="bg-white hover:bg-blue-400 text-black rounded-full w-24 h-10">
-              <a href="https://drive.google.com/file/d/1UfXKZwSXmCRYS-stzgw7xHP2Jsn3y4cG/view?usp=drive_link" target="_blank">Resume</a>
-            </button>
-            <button class="bg-white hover:bg-blue-700 text-black rounded-full w-24 h-10">
-              <a href="https://github.com/Igiraneza1?tab=repositories" target="_blank">Github</a>
-            </button>
-          </div>
-        </p>
+        <div>
+            <p class="p-5 text-center text-lg">
+                Hi, I'm Adeline IGIRANEZA.<br />
+                I'm a passionate Front-End Developer and UI/UX designer, focused on creating beautiful,
+                responsive, and user-friendly web experiences. I enjoy bringing ideas to life through clean,
+                functional design, and I'm always excited to learn, grow, and collaborate on innovative tech projects.
+                With a background in Information Technology and a curious mind, I'm driven to build solutions that make a real impact.
+                <br />
+                <div class="flex justify-center flex-wrap mt-4 gap-3">
+                  <button class="bg-gray-400 hover:bg-blue-400 text-black rounded-full w-24 h-10">
+                    <a href="https://drive.google.com/file/d/1UfXKZwSXmCRYS-stzgw7xHP2Jsn3y4cG/view?usp=drive_link" target="_blank">Resume</a>
+                  </button>
+                  <button class="bg-gray-400 hover:bg-blue-700 text-black rounded-full w-24 h-10">
+                    <a href="https://github.com/Igiraneza1?tab=repositories" target="_blank">Github</a>
+                  </button>
+                </div>
+              </p>
+            
+        </div>
+
       </div>
 
       
-      <div class="bg-teal-900 text-white rounded-lg p-4 space-y-6">
+      <div class="border-1 shadow-xl p-4 rounded-lg dark:text-white ">
  
         <div>
           <div class="flex justify-between items-center">
-            <h2 class="font-bold text-gray-300">skills__________________________</h2>
+            <h2 class="font-bold text-gray-700 text-xl dark:text-gray-300 p-5">SKILLS__________________________</h2>
             <button onclick="toggleContent()" class="text-white rounded bg-teal-500 w-24 h-10">Read more</button>
           </div>
           <div id="hiddenContent" class="mt-4 p-4 bg-white rounded hidden">
@@ -82,36 +86,38 @@
 
        
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-          <img src="images/HTML.png" alt="html" />
-          <img src="images/CSS.png" alt="css" />
-          <img src="images/java-script.png" alt="js" />
-          <img src="images/REACT.png" alt="react" />
-          <img src="images/TAILWIND.png" alt="tailwind" />
+          <img class="size-12" src="images/HTML.png" alt="html" />
+          <img class="size-12" src="images/CSS.png" alt="css" />
+          <img class="size-12" src="images/java-script.png" alt="js" />
+          <img class="size-12" src="images/REACT.png" alt="react" />
+          <img class="size-12" src="images/TAILWIND.png" alt="tailwind" />
         </div>
 
         
         <div>
-          <h2 class="font-bold text-gray-300 pb-4">projects____________________</h2>
+          <h2 class="font-bold text-gray-700 text-xl p-5 dark:text-gray-300">PROJECTS____________________</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div>
-              <img src="images/power.webp" width="70" height="80" alt="TechBridge" />
+            <div class="flex ">
+              <img class="pr-5  rounded-lg" src="images/power.webp" width="150" height="80" alt="TechBridge" />
               <p>
                 I worked on TechBridge project, where I built the structure and design of the website using HTML, CSS, and JavaScript.
                 The project focused on unlocking technology for all and creating innovation from internet.<br />
-                <strong>Skills:</strong> HTML, CSS, JavaScript
+                <strong><em>Skills:</em></strong> HTML, CSS, JavaScript<br>
+                <a href="https://igiraneza1.github.io/techbridge/" target="_blank">
+                    <button class="bg-green-700 rounded-full mt-2 w-40 h-10">View Project</button>
+                  </a>
               </p>
-              <a href="https://igiraneza1.github.io/techbridge/" target="_blank">
-                <button class="bg-green-700 rounded-full mt-2 w-40 h-10">View Project</button>
-              </a>
+              
             </div>
-            <div>
-              <img src="images/donation.jpg" width="70" height="50" alt="Donation" />
+            <div class="flex">
+              <img class="rounded-lg pr-5" src="images/donation.jpg" width="150" height="50" alt="Donation" />
               <p>
                 This project is a web-based platform using React.js to inform people about upcoming blood donation events, including location, date, and time.<br />
-                <strong>Skills:</strong> React.js
+                <strong><em>Skills:</em></strong> React.js<br>
+                <a href="https://kproject-psi.vercel.app/" target="_blank">
+                    <button class="bg-red-900 rounded-full mt-2 w-40 h-10">View Project</button>
               </p>
-              <a href="https://kproject-psi.vercel.app/" target="_blank">
-                <button class="bg-red-900 rounded-full mt-2 w-40 h-10">View Project</button>
+
               </a>
             </div>
           </div>
@@ -119,7 +125,7 @@
 
         
         <div>
-          <h3 class="font-bold text-gray-300 pb-4">Mission and Vision_______________</h3>
+          <h3 class="font-bold text-gray-700 p-4  text-xl dark:text-gray-300">MISSION AND VISION_______________</h3>
           <div class="flex flex-col lg:flex-row gap-4">
             <p><strong class="text-cyan-500">Mission:</strong> Empower communities by building user-friendly tech solutions and sharing digital skills that make a real difference.</p>
             <p><strong class="text-cyan-500">Vision:</strong> Inspire a future where everyone can create, connect, and grow through the power of technology.</p>
